@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chat-container {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+#chat-header {
+    background-color: #1A1C19;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#user-list {
+    padding: 10px;
+    background-color: #f8f9fa;
+    font-style: italic;
+    font-size: small;
+}
+
+#chat-window {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+
+#output {
+    margin-bottom: 20px;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+    clear: both;
+}
+
+.message strong {
+    display: block;
+}
+
+.my-message {
+    background-color: #d1e7dd;
+    /* Light green for user's messages */
+    float: right;
+    text-align: right;
+}
+
+.friend-message {
+    background-color: #cfe2ff;
+    /* Light blue for friends' messages */
+    float: left;
+    text-align: left;
+}
+
+#feedback {
+    color: #888;
+    font-style: italic;
+}
+
+#input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #1A1C19;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1A1C19;
+}

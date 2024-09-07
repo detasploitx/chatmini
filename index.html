@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatmini - Let's Hangout!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="login-container">
+        <h2>Chatmini ™</h2>
+        <input id="email" type="email" placeholder="Username" /><br />
+        <input id="password" type="password" placeholder="Secret key" /><br />
+        <button id="login">START!</button>
+        <div id="login-error" style="color: red; display: none;"></div>
+    </div>
+
+    <div id="chat-container" style="display: none;">
+        <div id="chat-header">
+            <h2>Chatmini ™</h2>
+            <button id="logout">Leave</button>
+        </div>
+        <div id="user-list"></div>
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+        </div>
+        <div id="input-area">
+            <input id="message" type="text" placeholder="Type your message." />
+            <button id="send" style="display: none;">SEND</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
